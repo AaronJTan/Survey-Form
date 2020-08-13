@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>CSPortal Survey Form</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="company">
+    <h1>CSPortal</h1>
+    <h2>All things Computer Science</h2>
+  </div>
+
+  <div id="parent">
+    <div id="container">
+      <header>
+        <h1 id="title">Course Survey Form</h1>
+        <p id="description">CSPortal is dedicated to helping people learn to code. Please indicate what topics you would like to learn.</p>
+      </header>
+
+      <form id="survey-form">
+        <div class="form-section non-checkbox">
+          <label class="name-label" for="name">Name:</label>
+          <input id="name" class="round" name="name" type="text" placeholder="Enter your Name"required>
+        </div>
+
+        <div class="form-section non-checkbox">
+          <label id="email-label" for="email">Email:</label>
+          <input type="email" id="email" class="round" name="email" placeholder="Enter your Email"required>
+        </div>
+
+        <div class="form-section non-checkbox">
+          <label id="age-label" for="age">Age (optional):</label>
+          <input id="age" class="round" name="age" type="number" min="18" max="99" placeholder="Age">
+        </div>
+
+        <div class="form-section non-checkbox">
+          <label id="dropdown-label" for="dropdown">Which option best describes your current role?</label>
+          <select id="dropdown" class="round" name="dropdown" required>
+            <option value="" disabled selected>Select current role</option>
+            <option value="student">Student</option>
+            <option value="ft-job">Full Time Job</option>
+            <option value="ft-learner">Full Time learner</option>
+            <option value="pref-not">Prefer Not To Say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-section">
+          <label>What courses would you be interested in? (Check all that apply)</label>
+
+          <div id="cb-div">
+            <label>
+              <input type="checkbox" name="course" value="spring-boot">Spring Boot
+            </label>
+
+            <label>
+              <input type="checkbox" name="course" value="django">Django
+            </label>
+
+            <label>
+              <input type="checkbox" name="course" value="express">Express
+            </label>
+
+            <label>
+              <input type="checkbox" name="course" value="react">React
+            </label>
+
+            <label>
+              <input type="checkbox" name="course" value="angular">Angular
+            </label>
+
+            <label>
+              <input type="checkbox" name="course" value="vuejs">Vuejs
+            </label>
+
+            <label>
+              <input type="checkbox" name="course" value="comp-sec">Networking
+            </label>
+
+            <label>
+              <input type="checkbox" name="course" value="comp-sec">Computer Security
+            </label>
+
+            <label>
+              <input type="checkbox" name="course" value="comp-sec">Data Science
+            </label>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <label for="comments">Comments:</label>
+          <textarea id="comments" class="round" name="comments" placeholder="Enter your comment here..."></textarea>
+        </div>
+
+        <div class="form-section submit-btn">
+          <button id="submit" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
